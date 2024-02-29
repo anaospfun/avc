@@ -14,13 +14,12 @@ and support screenshot recording and video chat where the camera is used.
 2. Configure OBS with the properties below :
 ```
 Streaming Service: Custom
-Server: rtmp://127.0.0.1
-Play Path: live
-Stream Key: test
+Server: rtmp://127.0.0.1/live
+Play Path/Stream Key: test
 ```
 3. If the mobile phone and computer are  on the same network.<br/>Open floating window and type RTMP url in mobile phone
 ```
-rtmp://<your server ip>/live/test
+rtmp://<your pc ip>/live/test
 ```
 
 If the mobile phone and computer are not on the same network，You can use adb streaming
@@ -35,10 +34,6 @@ If the mobile phone and computer are not on the same network，You can use adb s
 adb reverse tcp:1935 tcp:1935
 ```
 5. Open floating window and type rtmp://127.0.0.1/live/test
-
-
-
-
 
 
 ## Download 
